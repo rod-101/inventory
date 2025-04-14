@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add into Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inputPanel">
+        <div>
+            <label for="name">Name: </label><br>
+            <input type="text" id="name">
+        </div>
+
+        <div>
+            <label for="price">Price: </label><br>
+            <input type="text" id="price">
+        </div>
+
+        <div>
+            <label for="quantity">Quantity: </label><br>
+            <input type="text" id="quantity">
+        </div>
+
+        <div id="buttonContainer">
+            <button onclick="toInventory()">Add</button>
+        </div>
+    </div>
+    
+    <div id="tableContainer">
+        <h1>Inventory</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Products displays here-->
+            </tbody>
+        </table>
+    </div>
+
+    <dialog id="editDialog">
+        <h2>Edit Product</h2>
+        <form method="dialog">
+            <label for="name">Name: </label>
+            <input type="text" id="editName">
+            <label for="price">Price: </label>
+            <input type="text" id="editPrice">
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="editQuantity">
+            
+            <button onclick="saveEdit()">Save</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+</html>
