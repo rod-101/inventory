@@ -1,3 +1,3 @@
-# Simple Inventory System
+# Inventory System
 
 I created a simple inventory system.
