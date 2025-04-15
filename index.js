@@ -9,14 +9,14 @@ function toInventory() {
     if(name && price && quantity) {
         const product = {name, price, quantity};
         products.push(product);  
+        console.log('array updated: ');
+        console.log(products);
 
         //delete input contents after successful add
         document.getElementById('name').value = '';
         document.getElementById('price').value = '';
         document.getElementById('quantity').value = '';
-
         updateTable();
-        console.log(products);
     } else {
         alert("Fields cannot be empty.");
     }   
